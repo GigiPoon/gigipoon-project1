@@ -1,0 +1,83 @@
+//<i class="fa-brands fa-facebook-f"></i>
+//<i class="fa-brands fa-instagram"></i>
+//<i class="fa-brands fa-twitter"></i>
+//<i class="fa-brands fa-whatsapp"></i>
+
+
+
+.contactImg {
+    background-image: url(../beach-final-images/contact-image-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    position: relative;
+}
+
+.titleContact {
+    color: $iceelue;
+    position: absolute;
+    top: 50%;
+}
+
+form {
+    width: 65%;
+    padding: 50px;
+    box-shadow: 15px 15px 0 0 $greenishcyan;
+    background-color: $iceelue;
+    position: relative;
+    top: -125px;
+    margin-right: 50px;
+    .nameEmail {
+        display: flex;
+        justify-content: space-between;
+        input {
+            border: none;
+            border-bottom: 2px solid $greenishcyan;
+            width: 45%;
+            padding: 20px;
+        }
+    }
+    .flexform {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        textarea {
+            border: none;
+            border: 2px solid $greenishcyan;
+            padding: 20px;
+            resize: none;
+            width: 100%;
+            height: 250px;
+            }
+        button {
+            margin-top: 50px;
+        }
+    }
+}
+
+.socialMediaIcons {
+    display: flex;
+    li {
+        padding-right: 20px;
+    }
+}
+
+.contactInfo {
+    :first-child {
+        font-weight: bold;
+        margin: 15px 0;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.flexSocial {
+    display: flex;
+    justify-content: space-between;
+}

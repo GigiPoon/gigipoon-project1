@@ -609,3 +609,100 @@ footer p {
   color: #FAFFFE;
   text-align: center;
 }
+
+.contactImg {
+  background-image: url(../beach-final-images/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  position: relative;
+}
+
+.titleContact {
+  color: #FAFFFE;
+  position: absolute;
+  top: 50%;
+}
+
+form {
+  width: 65%;
+  padding: 50px;
+  -webkit-box-shadow: 15px 15px 0 0 #50E3C2;
+          box-shadow: 15px 15px 0 0 #50E3C2;
+  background-color: #FAFFFE;
+  position: relative;
+  top: -125px;
+  margin-right: 50px;
+}
+form .nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form .nameEmail input {
+  border: none;
+  border-bottom: 2px solid #50E3C2;
+  width: 45%;
+  padding: 20px;
+}
+form .flexform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+form .flexform textarea {
+  border: none;
+  border: 2px solid #50E3C2;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+  height: 250px;
+}
+form .flexform button {
+  margin-top: 50px;
+}
+
+.socialMediaIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.socialMediaIcons li {
+  padding-right: 20px;
+}
+
+.contactInfo :first-child {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flexSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
