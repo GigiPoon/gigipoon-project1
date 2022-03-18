@@ -1,0 +1,39 @@
+*, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    color: $iceelue;
+    background-color: $twilightelue;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 7px 20px;
+    &:hover {
+        background-color: #2b80e0;
+    }
+    &:focus {
+        background-color: #2b80e0;
+    }
+
+}

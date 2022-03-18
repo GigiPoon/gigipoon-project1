@@ -1,0 +1,86 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    background-color:#FAFFFE;
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5.56rem;
+    font-weight: 900;
+    color: $twilightelue;
+}
+
+h1,
+button,
+.logo {
+    font-family: 'Playfair Display SC', serif;
+}
+
+h2 {
+    font-size: 4.35rem;
+    letter-spacing: 0.45rem;
+}
+
+h3 {
+    font-size: 3.1rem;
+    letter-spacing: 0.335rem;
+    color: $spruce;
+}
+
+h4,h5 {
+    font-size: 1.75rem;
+    letter-spacing: 0.19rem;
+    color: $spruce;
+}
+
+h6 {
+    font-size: 1.5rem;
+    letter-spacing: 0.16rem;
+    color: $spruce;
+}
+
+h2,h3,h4,h5,h6 {
+    line-height: 2.9rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-weight: 700;
+}
+
+button {
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+nav {
+    line-height: 1.45rem;
+    letter-spacing: 0.05rem;
+}
+
+p {
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+.logo {
+    font-size: 1.73rem;
+}
+::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+

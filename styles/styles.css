@@ -225,3 +225,387 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  background-color: #FAFFFE;
+  max-width: 2500px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 5.56rem;
+  font-weight: 900;
+  color: #063974;
+}
+
+h1,
+button,
+.logo {
+  font-family: "Playfair Display SC", serif;
+}
+
+h2 {
+  font-size: 4.35rem;
+  letter-spacing: 0.45rem;
+}
+
+h3 {
+  font-size: 3.1rem;
+  letter-spacing: 0.335rem;
+  color: #0C5F4C;
+}
+
+h4, h5 {
+  font-size: 1.75rem;
+  letter-spacing: 0.19rem;
+  color: #0C5F4C;
+}
+
+h6 {
+  font-size: 1.5rem;
+  letter-spacing: 0.16rem;
+  color: #0C5F4C;
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 2.9rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-weight: 700;
+}
+
+button {
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+
+nav {
+  line-height: 1.45rem;
+  letter-spacing: 0.05rem;
+}
+
+p {
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.logo {
+  font-size: 1.73rem;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::-moz-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+*, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  color: #FAFFFE;
+  background-color: #063974;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+  padding: 7px 20px;
+}
+button:hover {
+  background-color: #2b80e0;
+}
+button:focus {
+  background-color: #2b80e0;
+}
+
+.checked {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.checked li:first-child {
+  margin-right: auto;
+}
+.checked li a {
+  color: #FAFFFE;
+}
+.checked li .logo {
+  color: #50E3C2;
+}
+
+.homeImg {
+  height: 100vh;
+  background-image: url(../beach-final-images/home-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.titleImg {
+  width: 45%;
+  position: absolute;
+  left: 0;
+  bottom: -10vh;
+}
+.titleImg img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-40%, -50%);
+          transform: translate(-40%, -50%);
+  z-index: 10;
+}
+
+.about {
+  padding: 150px 0;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flexContainer .flexLeft {
+  width: 60%;
+  margin-right: 50px;
+}
+.flexContainer .flexLeft p {
+  margin: 10px 0 20px 0;
+}
+.flexContainer .flexRight {
+  -webkit-box-shadow: -15px 15px 0 0 #50E3C2;
+          box-shadow: -15px 15px 0 0 #50E3C2;
+}
+.flexContainer .flexRight img {
+  height: 100%;
+  width: 100%;
+}
+
+.gallery {
+  background-color: #D2F9F1;
+}
+.gallery .galleryImg {
+  padding: 150px 0;
+}
+.gallery .galleryImg img {
+  width: calc(33.3333333333% - 20px);
+}
+
+.info {
+  padding: 150px 0;
+}
+.info .flexInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.info .flexInfo li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoLeft i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #50E3C2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FAFFFE;
+  margin-right: 20px;
+}
+
+.infoRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.infoRight p {
+  margin-bottom: 50px;
+}
+
+.fa-users,
+.fa-phone-flip {
+  margin-left: 20px;
+}
+
+.extraInfo {
+  position: relative;
+  padding-bottom: 1000px;
+  background-color: #D2F9F1;
+}
+
+.flexColumnLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 45%;
+}
+.flexColumnLeft .leftText {
+  text-align: right;
+}
+.flexColumnLeft .leftText .wrapper {
+  width: 50%;
+}
+.flexColumnLeft .leftImg img {
+  width: 100%;
+}
+
+.flexColumnRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: -5%;
+  width: 45%;
+}
+.flexColumnRight img {
+  width: 100%;
+}
+
+.backgroundImg {
+  background-image: url(../beach-final-images/banner-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 300px;
+}
+
+.freeTrip {
+  padding: 150px 0;
+}
+
+.centerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.centerText button {
+  margin: auto;
+}
+.centerText p {
+  margin: 10px 0 20px 0;
+}
+
+footer {
+  padding: 10px;
+  background-color: #2C2C2C;
+}
+footer p {
+  color: #FAFFFE;
+  text-align: center;
+}

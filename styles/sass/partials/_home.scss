@@ -1,0 +1,174 @@
+.homeImg {
+    height: 100vh;
+    background-image: url(../beach-final-images/home-image-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.titleImg {
+    width: 45%;
+    position: absolute;
+    left: 0;
+    bottom: -10vh;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    z-index: 10;
+}
+
+.about {
+    padding: 150px 0;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    .flexLeft {
+        width: 60%;
+        margin-right: 50px;
+        p {
+            margin: 10px 0 20px 0
+        }
+    }
+    .flexRight {
+        box-shadow: -15px 15px 0 0 $greenishcyan;  
+        img {
+            height: 100%;
+            width: 100%;
+        } 
+    }
+}
+
+.gallery {
+    background-color: $lightlightblue;
+    .galleryImg {
+        padding: 150px 0;
+        img {
+            width: calc(100%/3 - 20px);
+        }
+    }
+}
+
+.info {
+    padding: 150px 0;
+    .flexInfo {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: 50%;
+            display: flex; 
+        }
+    }
+}
+
+.infoLeft {
+    i {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $greenishcyan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $iceelue;
+        margin-right: 20px;
+    }
+}
+
+.infoRight {
+    display: flex;
+    flex-direction: column;
+    p {
+        margin-bottom: 50px;
+    }
+}
+
+.fa-users,
+.fa-phone-flip {
+        margin-left: 20px;
+}
+
+
+.extraInfo {
+    position: relative;
+    padding-bottom: 1000px;
+    background-color: $lightlightblue;
+}
+
+
+.flexColumnLeft {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 45%;
+    .leftText {
+        text-align: right;
+        .wrapper {
+            width: 50%;
+        }
+    }
+    .leftImg {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.flexColumnRight {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    width: 45%;
+    img {
+        width: 100%;
+    }
+}
+
+.backgroundImg {
+    background-image: url(../beach-final-images/banner-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 300px;
+}
+
+.freeTrip {
+    padding: 150px 0;
+}
+
+.centerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    button {
+        margin: auto;
+    }
+    p {
+        margin: 10px 0 20px 0;
+    }
+}
+
+footer {
+    padding: 10px;
+    background-color: $black;
+    p {
+        color: $iceelue;
+        text-align: center;
+    }
+}

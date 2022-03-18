@@ -1,0 +1,15 @@
+.checked {
+    display: flex;
+    justify-content: flex-end;
+    li {
+        &:first-child {
+            margin-right: auto;
+        }
+        a {
+            color:$iceelue;   
+        }
+        .logo {
+            color: $greenishcyan;
+        }
+    }
+}

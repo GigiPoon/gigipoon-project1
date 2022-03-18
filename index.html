@@ -14,7 +14,8 @@
     <script src="https://kit.fontawesome.com/bc297a5354.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <header>
+    <header>
+        <div class="homeImg">
             <div class="wrapper">
                 <nav class="mainNav">
                     <input type="checkbox" class="checkbox" id="checkbox">
@@ -24,7 +25,7 @@
                     </label>
                     <ul class="checked">
                         <li>
-                            <a href="index.html">Beachstays</a>
+                            <a href="index.html" class="logo">Beachstays</a>
                         </li>
                         <li>
                             <a href="index.html">Home</a>
@@ -43,11 +44,16 @@
                 <!--end of main nav-->
                 <div class="title">
                     <h1>Beachstays</h1>
-                    <h3>Welcome to</h3>
+                    <h3>welcome to</h3>
+                </div>
+                <div class="titleImg">
+                    <img src="./beach-final-images/header-box.jpg"
+                        alt="sunglasses on a sandy beach with blue water and lots of sunlight">
                 </div>
             </div>
             <!--end of wrapper-->
-        </header>
+        </div>
+    </header>
 
     <main>
         <section class="about" id="about">
@@ -67,7 +73,7 @@
         </section>
         <section class="gallery" id="gallery">
             <div class="wrapper">
-                <div class="flexContainer">
+                <div class="galleryImg flexContainer">
                     <img src="./beach-final-images/gallery-image1.jpg" alt="building by the ocean with lots of clouds in the sky">
                     <img src="./beach-final-images/gallery-image2.jpg" alt="zoomed in view with two floors and a path to walk in">
                     <img src="./beach-final-images/gallery-image3.jpg" alt="a three story building on the beach surrounded by palm trees">
@@ -76,54 +82,88 @@
         </section>
         <section class="info" id="info">
             <div class="wrapper">
-                <ul>
+                <ul class="flexInfo">
                     <li>
-                        <h4>Beach houses</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus tempora repudiandae nam exercitationem voluptas! Veniam delectus facilis veritatis, minus deserunt ad! Temporibus, unde ratione rerum tempore neque vitae totam.</p>
+                        <div class="infoLeft">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <div class="infoRight">
+                            <h6>Beach houses</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem accusamus tempora repudiandae nam exercitationem voluptas! Veniam delectus facilis veritatis, minus deserunt ad! Temporibus, unde ratione rerum tempore neque vitae totam.</p>
+                        </div>
                     </li>
                     <li>
-                        <h4>Community</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellat vel reiciendis quo adipisci tempore sed est iure sapiente voluptatibus omnis nulla enim eligendi minus dolore, ullam repudiandae alias iusto.</p>
+                        <div class="infoLeft">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <div class="infoRight">
+                            <h6>Community</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellat vel reiciendis quo adipisci tempore sed est iure sapiente voluptatibus omnis nulla enim eligendi minus dolore, ullam repudiandae alias iusto.</p>
+                        </div>
                     </li>
                     <li>
-                        <h4>Blog</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis aliquam natus accusamus enim nisi consectetur similique inventore nam aperiam numquam necessitatibus unde minus vel nesciunt eligendi, accusantium qui corrupti?</p>
+                        <div class="infoLeft">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <div class="infoRight">
+                            <h6>Blog</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis aliquam natus accusamus enim nisi consectetur similique inventore nam aperiam numquam necessitatibus unde minus vel nesciunt eligendi, accusantium qui corrupti?</p>
+                        </div>
                     </li>
                     <li>
-                        <h4>Get in Touch</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi, mollitia minima unde illum veniam exercitationem est, harum quaerat nihil molestias. Quo est, modi ullam ex harum optio doloribus expedita.</p>
+                        <div class="infoLeft">
+                            <i class="fa-solid fa-phone-flip"></i>
+                        </div>
+                        <div class="infoRight">
+                            <h6>Get in Touch</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sequi, mollitia minima unde illum veniam exercitationem est, harum quaerat nihil molestias. Quo est, modi ullam ex harum optio doloribus expedita.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="extraInfo" id="extraInfo">
-            <div class="topImg">
-            <img src="./beach-final-images/left-image.jpg" alt="a zoomed in view of a fancy building with a clear blue sky">
-            </div>
-            <div class="topText wrapper">
-                <h4>Plan ahead</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ea tempora ipsum reprehenderit ab obcaecati cumque alias inventore necessitatibus enim voluptate hic molestiae cum velit est. Pariatur repellat eos porro!</p>
-                <button>Read more</button>
-            </div>
-            <div class="bottomImg wrapper">
-                <h4>New locations</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima explicabo incidunt recusandae consequatur itaque dolore repudiandae sequi alias repellat excepturi assumenda modi maiores officia culpa, natus voluptatem cumque ipsum est.</p>
-                <button>Read more</button>
-            </div>
-            <div class="bottomImg">
-                <img src="./beach-final-images/right-image.jpg" alt="ocean with moutains and with a little bit of land and trees around">
+            <div class="flexRow">
+                <div class="flexColumnLeft">
+                    <div class="leftImg">
+                        <img src="./beach-final-images/left-image.jpg" alt="a zoomed in view of a fancy building with a clear blue sky">
+                    </div>
+                    <div class="leftText wrapper">
+                        <h4>New locations</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima explicabo incidunt recusandae consequatur itaque
+                            dolore repudiandae sequi alias repellat excepturi assumenda modi maiores officia culpa, natus voluptatem cumque
+                            ipsum est.</p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="flexColumnRight">
+                    <div class="rightText wrapper">
+                        <h4>Plan ahead</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ea tempora ipsum reprehenderit ab obcaecati cumque alias inventore necessitatibus enim voluptate hic molestiae cum velit est. Pariatur repellat eos porro!</p>
+                        <button>Read more</button>
+                    </div>
+                    <div class="rightImg">
+                        <img src="./beach-final-images/right-image.jpg" alt="ocean with moutains and with a little bit of land and trees around">
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+        <section class="backgroundImg">
+        </section>
+        <section class="freeTrip">
             <div class="wrapper">
-                <h4>Free trip with Beachstays</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos mollitia dolor debitis magni amet officia nesciunt dolore minus eum, nobis porro atque tenetur, placeat odio sint eligendi a omnis voluptatibus?</p>
-                <button>Find out more</button>
+                <div class="centerText">
+                    <h4>Free trip with Beachstays</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos mollitia dolor debitis magni amet officia nesciunt dolore minus eum, nobis porro atque tenetur, placeat odio sint eligendi a omnis voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita neque dignissimos dicta, ducimus amet, odio reiciendis perspiciatis libero nam quod qui quo deleniti laboriosam iusto tempore odit similique asperiores!</p>
+                    <button>Find out more</button>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>Copyright @ 2019 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright @ 2019 HackerYou</p>
+        </div>
     </footer>
 </body>
 </html>
