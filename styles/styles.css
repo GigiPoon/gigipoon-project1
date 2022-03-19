@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -226,10 +227,6 @@ html {
   overflow: hidden;
 }
 
-html {
-  font-size: 125%;
-}
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -389,11 +386,39 @@ button:focus {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.checked li:not(:first-child) {
+  padding: 8px 0 8px 50px;
+}
 .checked li:first-child {
   margin-right: auto;
 }
+.checked li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #50E3C2;
+  display: block;
+  margin: auto;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+.checked li:hover::after {
+  width: 100%;
+}
 .checked li a {
   color: #FAFFFE;
+  text-transform: uppercase;
+  padding: 8px;
+}
+.checked li a:hover {
+  color: #50E3C2;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin: auto;
+}
+.checked li a:focus {
+  color: #50E3C2;
+  border: 1px solid #50E3C2;
 }
 .checked li .logo {
   color: #50E3C2;
@@ -428,10 +453,10 @@ button:focus {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translate(-40%, -50%);
-          transform: translate(-40%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
 }
 
@@ -625,7 +650,7 @@ footer p {
   top: 50%;
 }
 
-form {
+.formContact {
   width: 65%;
   padding: 50px;
   -webkit-box-shadow: 15px 15px 0 0 #50E3C2;
@@ -635,7 +660,8 @@ form {
   top: -125px;
   margin-right: 50px;
 }
-form .nameEmail {
+
+.nameEmail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,13 +669,14 @@ form .nameEmail {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-form .nameEmail input {
+.nameEmail input {
   border: none;
   border-bottom: 2px solid #50E3C2;
   width: 45%;
   padding: 20px;
 }
-form .flexform {
+
+.flexform {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -659,7 +686,7 @@ form .flexform {
           flex-direction: column;
   margin-top: 50px;
 }
-form .flexform textarea {
+.flexform textarea {
   border: none;
   border: 2px solid #50E3C2;
   padding: 20px;
@@ -667,7 +694,7 @@ form .flexform textarea {
   width: 100%;
   height: 250px;
 }
-form .flexform button {
+.flexform button {
   margin-top: 50px;
 }
 
@@ -705,4 +732,108 @@ form .flexform button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.blogImg {
+  background-image: url(../beach-final-images/blog-image-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  position: relative;
+}
+
+.titleBlog {
+  color: #FAFFFE;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.blogImgLeft {
+  -webkit-box-shadow: 15px 15px 0 0 #50E3C2;
+          box-shadow: 15px 15px 0 0 #50E3C2;
+}
+.blogImgLeft img {
+  width: 100%;
+  height: 100%;
+}
+
+.blogImgLeft {
+  width: 55%;
+}
+
+.blogLeft {
+  width: 55%;
+  padding-bottom: 150px;
+}
+
+.flexBlog {
+  position: relative;
+}
+.flexBlog .blogImgLeft {
+  position: relative;
+  top: -100px;
+}
+
+.blogRight {
+  width: 25%;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+.blogRight img {
+  width: 100%;
+  height: 100%;
+}
+
+.sideBarList,
+.sideBarInfo {
+  margin-right: 20px;
+}
+
+.sideBarList li ::before {
+  content: "•";
+  color: #50E3C2;
+  display: inline-block;
+  width: 25px;
+}
+
+.sideBarInfo :last-child {
+  color: #0C5F4C;
+}
+
+.pContainer {
+  padding-bottom: 150px;
+}
+.pContainer p:first-of-type {
+  color: #063974;
+  letter-spacing: normal;
+}
+.pContainer p:nth-of-type(n +2) {
+  margin: 30px 0;
+}
+
+.commentContainer > p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.flexComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+.flexComment p:first-of-type {
+  color: #063974;
+  font-weight: bold;
+}
+
+.commentOne {
+  width: 80%;
+  margin-left: 20px;
 }

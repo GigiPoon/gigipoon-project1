@@ -2,14 +2,43 @@
     display: flex;
     justify-content: flex-end;
     li {
+        &:not(:first-child) {
+                padding: 8px 0 8px 50px;
+            }
         &:first-child {
             margin-right: auto;
         }
+        &::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: $greenishcyan;
+            display: block;
+            margin: auto;
+            transition: 0.25s;
+        }
+        &:hover {
+            &::after {
+            width: 100%;
+            }
+        }
         a {
-            color:$iceelue;   
+            color:$iceelue;
+            text-transform: uppercase;
+            padding: 8px;
+            &:hover {
+                color: $greenishcyan;
+                transition: 0.25s;
+                margin: auto;
+            }
+            &:focus {
+                color: $greenishcyan;
+                border: 1px solid $greenishcyan;
+            }
         }
         .logo {
             color: $greenishcyan;
         }
     }
 }
+
