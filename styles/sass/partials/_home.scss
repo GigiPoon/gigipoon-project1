@@ -1,3 +1,4 @@
+//header background img
 .homeImg {
     height: 100vh;
     background-image: url(../beach-final-images/home-image-1.jpg);
@@ -7,6 +8,7 @@
     position: relative;
 }
 
+//nav bar checkbox
 .checkbox {
     display: none;
 }
@@ -17,6 +19,7 @@
     }
 }
 
+//small header img
 .titleImg {
     width: 45%;
     position: absolute;
@@ -28,6 +31,8 @@
     }
 }
 
+
+//title
 .title {
     display: flex;
     flex-direction: column-reverse;
@@ -38,6 +43,7 @@
     z-index: 10;
 }
 
+//about section
 .about {
     padding: 250px 0 150px 0;
 }
@@ -61,6 +67,7 @@
     }
 }
 
+//gallery section
 .gallery {
     background-color: $lightlightblue;
     .galleryImg {
@@ -71,6 +78,7 @@
     }
 }
 
+//info section
 .info {
     padding: 150px 0;
     .flexInfo {
@@ -110,7 +118,7 @@
         margin-left: 20px;
 }
 
-
+//extra info section
 .extraInfo {
     position: relative;
     padding-bottom: 900px;
@@ -170,6 +178,7 @@
     }
 }
 
+//background img section
 .backgroundImg {
     background-image: url(../beach-final-images/banner-image.jpg);
     background-repeat: no-repeat;
@@ -178,6 +187,7 @@
     padding: 300px;
 }
 
+//free trip section
 .freeTrip {
     padding: 150px 0;
 }
@@ -194,6 +204,7 @@
     }
 }
 
+//footer section
 footer {
     padding: 10px;
     background-color: $black;

@@ -1,3 +1,4 @@
+//body style
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
@@ -6,6 +7,7 @@ body {
     margin: 0 auto;
 }
 
+//typography styles
 h1 {
     font-size: 5.56rem;
     font-weight: 900;
@@ -18,11 +20,13 @@ button,
     font-family: 'Playfair Display SC', serif;
 }
 
+// blog and contact title
 h2 {
     font-size: 4.35rem;
     letter-spacing: 0.45rem;
 }
 
+//welcome to
 h3 {
     font-size: 3.1rem;
     letter-spacing: 0.335rem;
@@ -35,13 +39,14 @@ h4 {
     color: $spruce;
 }
 
-//the sub headings in blog section
+//the sub headings on right in blog section
 h5 {
     font-size: 1.2rem;
     color: $twilightelue;
     letter-spacing: 0.1rem;
 }
 
+//info title
 h6 {
     font-size: 1.5rem;
     letter-spacing: 0.16rem;
@@ -80,6 +85,8 @@ p {
 .logo {
     font-size: 1.73rem;
 }
+
+//form on blog and contact
 ::placeholder {
     font-family: 'Lato', sans-serif;
     font-weight: 300;

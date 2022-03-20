@@ -3,8 +3,7 @@
 //<i class="fa-brands fa-twitter"></i>
 //<i class="fa-brands fa-whatsapp"></i>
 
-
-
+//header background img
 .contactImg {
     background-image: url(../beach-final-images/contact-image-1.jpg);
     background-repeat: no-repeat;
@@ -14,12 +13,14 @@
     position: relative;
 }
 
+//contact title
 .titleContact {
     color: $iceelue;
     position: absolute;
     top: 50%;
 }
 
+//form 
 .formContact {
     width: 65%;
     padding: 50px;
@@ -41,6 +42,7 @@
     }
 }
 
+//social media icons
 .socialMediaIcons {
     display: flex;
     li {
