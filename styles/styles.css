@@ -384,6 +384,10 @@ button:focus {
   background-color: #2b80e0;
 }
 
+.mainNav {
+  padding: 30px 0;
+}
+
 .checked {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,6 +401,7 @@ button:focus {
 }
 .checked li:first-child {
   margin-right: auto;
+  margin-top: 5px;
 }
 .checked li::after {
   content: "";
@@ -420,7 +425,6 @@ button:focus {
   color: #50E3C2;
   -webkit-transition: 0.25s;
   transition: 0.25s;
-  margin: auto;
 }
 .checked li a:focus {
   color: #50E3C2;
@@ -437,6 +441,14 @@ button:focus {
   background-position: center;
   background-size: cover;
   position: relative;
+}
+
+.checkbox {
+  display: none;
+}
+
+.toggle i {
+  display: none;
 }
 
 .titleImg {
@@ -795,7 +807,7 @@ footer p {
   height: 100%;
 }
 
-.flexform {
+.flexForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -805,7 +817,7 @@ footer p {
           flex-direction: column;
   margin-top: 70px;
 }
-.flexform textarea {
+.flexForm textarea {
   border: none;
   border: 2px solid #50E3C2;
   padding: 20px;
@@ -813,7 +825,7 @@ footer p {
   width: 100%;
   height: 250px;
 }
-.flexform button {
+.flexForm button {
   margin-top: 50px;
 }
 
@@ -836,7 +848,7 @@ footer p {
 }
 
 .pContainer {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 .pContainer p:first-of-type {
   color: #063974;
@@ -871,6 +883,10 @@ footer p {
 }
 
 @media (max-width: 1024px) {
+  .checked li:not(:first-child) {
+    margin: 8px 0 8px 20px;
+  }
+
   .title {
     left: 50%;
   }
@@ -925,8 +941,7 @@ footer p {
     margin: 60px 0;
   }
 
-  .info,
-.freeTrip {
+  .freeTrip {
     padding: 100px 0;
   }
 
@@ -936,6 +951,10 @@ footer p {
 
   .blogLeft {
     padding-bottom: 100px;
+  }
+
+  .flexForm {
+    margin-top: 50px;
   }
 
   .contactHeader {
@@ -972,6 +991,99 @@ footer p {
   }
 }
 @media (max-width: 768px) {
+  .title {
+    text-align: center;
+  }
+  .title h1 {
+    width: 350px;
+    word-wrap: break-word;
+  }
+
+  .mainNav {
+    position: absolute;
+    background-color: #2C2C2C;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    padding: 0;
+  }
+
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 30px;
+    right: 0;
+    top: 0;
+  }
+  .toggle i:first-child {
+    display: block;
+  }
+
+  label i:first-child {
+    color: #50E3C2;
+  }
+  label :last-child {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    margin: 22px;
+    top: 0;
+    left: 0;
+  }
+  .logo::after {
+    margin: 0;
+  }
+
+  .checked {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checked li:not(:first-child) {
+    display: none;
+    margin: 25px;
+  }
+  .checked li:nth-child(2) {
+    margin-top: 100px;
+  }
+  .checked li:last-child {
+    margin-bottom: 100px;
+  }
+
+  .checkbox:checked ~ ul.checked li {
+    display: block;
+  }
+
+  .checkbox:checked ~ label.toggle .fa-solid.fa-xmark {
+    display: block;
+    color: #FAFFFE;
+  }
+
+  .checkbox:checked ~ label.toggle .fa-solid.fa-bars {
+    display: none;
+  }
+
+  .titleImg {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .titleImg img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
   .about .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -996,7 +1108,7 @@ footer p {
   }
 
   .info {
-    padding-bottom: 100px;
+    padding: 100px 0 50px 0;
   }
   .info .flexInfo {
     -webkit-box-pack: center;
@@ -1019,7 +1131,7 @@ footer p {
   .flexColumnLeft {
     position: unset;
     width: 100%;
-    padding: 150px 0;
+    padding-bottom: 100px;
   }
   .flexColumnLeft .leftText {
     text-align: center;
@@ -1028,10 +1140,8 @@ footer p {
     margin: 0 auto;
   }
   .flexColumnLeft .leftImg {
-    width: 80%;
+    width: 100%;
     height: 350px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     margin: auto;
   }
 
@@ -1042,7 +1152,7 @@ footer p {
             flex-direction: column-reverse;
     position: unset;
     width: 100%;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .flexColumnRight .rightText {
     text-align: center;
@@ -1051,15 +1161,17 @@ footer p {
     margin: 0 auto;
   }
   .flexColumnRight .rightImg {
-    width: 80%;
+    width: 100%;
     height: 350px;
-    -webkit-box-shadow: none;
-            box-shadow: none;
     margin: 0 auto;
   }
 
+  .blogLeft {
+    padding: 100px 0;
+  }
+
   .blogImg {
-    height: 30vh;
+    height: 40vh;
   }
 
   .blogRight {
@@ -1099,10 +1211,6 @@ footer p {
             box-shadow: 15px 15px 0 0 #50E3C2;
   }
 
-  .pContainer {
-    padding: 70px 0;
-  }
-
   .sideBarInfo,
 .sideBarList {
     width: 65%;
@@ -1113,14 +1221,35 @@ footer p {
   }
 
   .contactImg {
-    height: 30vh;
+    height: 40vh;
   }
 
   .formContact {
     padding: 35px;
   }
+
+  .nameEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nameEmail input {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 @media (max-width: 480px) {
+  .titleImg {
+    display: none;
+  }
+
+  .title h1 {
+    font-size: 4.5rem;
+    width: 260px;
+    word-wrap: break-word;
+  }
+
   .wrapper {
     width: 90%;
   }
@@ -1129,14 +1258,21 @@ footer p {
     width: 90%;
   }
 
+  .flexColumnLeft {
+    padding-top: 100px;
+  }
   .flexColumnLeft .leftImg {
     height: 250px;
     width: 90%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .flexColumnRight .rightImg {
     height: 250px;
     width: 90%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .backgroundImg {

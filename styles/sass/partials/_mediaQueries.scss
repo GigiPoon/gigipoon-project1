@@ -1,5 +1,13 @@
 
 @media (max-width: 1024px) {
+    //navbar restyle
+    .checked {
+        li {
+            &:not(:first-child) {
+                margin: 8px 0 8px 20px;
+            }
+        }
+    }
     .title {
         left: 50%;
     }
@@ -45,7 +53,6 @@
             }
         }
     }
-    .info,
     .freeTrip {
         padding: 100px 0;
     }
@@ -55,6 +62,9 @@
     }
     .blogLeft {
     padding-bottom: 100px;
+    }
+    .flexForm {
+        margin-top: 50px;
     }
 
     //contact 
@@ -88,8 +98,109 @@
 }
 
 @media (max-width: 768px) {
-//homepage
+    //header
+    .title {
+        text-align: center;
+        h1 {
+            width: 350px;
+            word-wrap: break-word;
+        }
+    }
+    .mainNav {
+        position: absolute;
+        background-color: $black;
+        width: 100%;
+        left: 0;
+        z-index: 20;
+        padding: 0;
+    }
+    .toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 30px;
+        right: 0;
+        top: 0;
+            i {
+            &:first-child {
+            display: block;
+            }
+        }
+    }
+    label {
+        i{
+            &:first-child {
+                color: $greenishcyan;
+            }
+        }
+        :last-child {
+            display: none;
+        }
+    }
+    .logo {
+        position: absolute;
+        margin: 22px;
+        top: 0;
+        left: 0;
+        &::after {
+            margin: 0;
+        }
+    }
+    .checked {
+        align-items: center;
+        flex-direction: column;
+        li {
+            &:not(:first-child) {
+            display: none;
+            margin: 25px;
+            }
+            &:nth-child(2) {
+            margin-top: 100px;
+            }
+            &:last-child {
+                margin-bottom: 100px;
+            }
+        }
+    }
+    
+    .checkbox:checked {
+        ~ul.checked {
+            li {
+                display: block;
+            }
+        } 
+    }
+
+    .checkbox:checked {
+        ~label.toggle {
+            .fa-solid.fa-xmark {
+                display: block;
+                color: $iceelue;
+            }
+        }
+    }
+
+    .checkbox:checked {
+        ~label.toggle {
+            .fa-solid.fa-bars {
+                display: none;
+            }
+        }
+    }
+    .titleImg {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    //homepage
     .about {
+        padding: 100px 0;
         .flexContainer {
             flex-direction: column-reverse;
             align-items: center;
@@ -112,7 +223,7 @@
         }
     }
     .info {
-        padding-bottom: 100px;
+        padding: 100px 0 50px 0;
         .flexInfo {
             justify-content: center;
             li {
@@ -130,7 +241,7 @@
     .flexColumnLeft {
         position: unset;
         width: 100%;
-        padding: 150px 0;
+        padding-bottom: 100px;
         .leftText {
             text-align: center;
             padding-top: 70px;
@@ -138,9 +249,8 @@
             margin: 0 auto;
         }
         .leftImg {
-            width: 80%;
+            width: 100%;
             height: 350px;
-            box-shadow: none;
             margin: auto;
         }
     }
@@ -148,7 +258,7 @@
         flex-direction: column-reverse;
         position: unset;
         width: 100%;
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         .rightText {
             text-align: center;
             padding-top: 70px;
@@ -156,15 +266,17 @@
             margin: 0 auto;
         }
         .rightImg {
-            width: 80%;
+            width: 100%;
             height: 350px;
-            box-shadow: none;
             margin: 0 auto;
         }
     }
+    .blogLeft {
+            padding: 100px 0;
+    }
 //blogpage
     .blogImg {
-        height: 30vh;
+        height: 40vh;
     }
     .blogRight {
         width: 100%;
@@ -192,9 +304,6 @@
             box-shadow: 15px 15px 0 0 $greenishcyan;
         }
     }
-    .pContainer {
-        padding: 70px 0;
-    }
     .sideBarInfo,
     .sideBarList {
         width: 65%;
@@ -206,14 +315,31 @@
     }
     //contactpage
     .contactImg {
-        height: 30vh;
+        height: 40vh;
     }
     .formContact {
         padding: 35px;
     }
+    .nameEmail {
+        flex-direction: column;
+        input {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
 }
 
 @media (max-width: 480px) {
+    .titleImg {
+        display: none;
+    }
+    .title {
+        h1 {
+            font-size: 4.5rem;
+            width: 260px;
+            word-wrap: break-word;
+        }
+    }
     .wrapper {
         width: 90%;
     }
@@ -225,15 +351,18 @@
         }
     }
     .flexColumnLeft {
+        padding-top: 100px;
         .leftImg {
             height: 250px;
             width: 90%;
+            box-shadow: none;
         }
     }
     .flexColumnRight {
         .rightImg {
             height: 250px;
             width: 90%;
+            box-shadow: none;
         }
     }
     .backgroundImg {

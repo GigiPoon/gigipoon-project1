@@ -1,3 +1,6 @@
+.mainNav {
+    padding: 30px 0;
+}
 .checked {
     display: flex;
     justify-content: flex-end;
@@ -7,6 +10,7 @@
             }
         &:first-child {
             margin-right: auto;
+            margin-top: 5px;
         }
         &::after {
             content: '';
@@ -29,7 +33,6 @@
             &:hover {
                 color: $greenishcyan;
                 transition: 0.25s;
-                margin: auto;
             }
             &:focus {
                 color: $greenishcyan;

@@ -7,6 +7,16 @@
     position: relative;
 }
 
+.checkbox {
+    display: none;
+}
+
+.toggle {
+    i {
+        display: none;
+    }
+}
+
 .titleImg {
     width: 45%;
     position: absolute;

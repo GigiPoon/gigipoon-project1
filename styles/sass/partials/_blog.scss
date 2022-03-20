@@ -45,7 +45,7 @@
     }
 }
 
-.flexform {
+.flexForm {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
@@ -87,7 +87,7 @@
 }
 
 .pContainer {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     p {
         &:first-of-type {
             color: $twilightelue;
