@@ -347,12 +347,8 @@
     .titleImg {
         display: none;
     }
-    .title {
-        h1 {
-            font-size: 4.5rem;
-            width: 260px;
-            word-wrap: break-word;
-        }
+    span {
+        display: block;
     }
     .wrapper {
         width: 90%;
@@ -419,5 +415,8 @@
         input {
             border: 2px solid $greenishcyan;
         }
+    }
+    .contactImg {
+        height: 55vh;
     }
 }

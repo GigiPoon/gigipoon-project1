@@ -691,7 +691,7 @@ footer p {
 .titleContact {
   color: #FAFFFE;
   position: absolute;
-  top: 50%;
+  top: 35%;
 }
 
 .formContact {
@@ -772,7 +772,7 @@ footer p {
 .titleBlog {
   color: #FAFFFE;
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 10;
 }
 
@@ -1262,10 +1262,8 @@ footer p {
     display: none;
   }
 
-  .title h1 {
-    font-size: 4.5rem;
-    width: 260px;
-    word-wrap: break-word;
+  span {
+    display: block;
   }
 
   .wrapper {
@@ -1330,5 +1328,9 @@ footer p {
 
   .nameEmail input {
     border: 2px solid #50E3C2;
+  }
+
+  .contactImg {
+    height: 55vh;
   }
 }
