@@ -23,11 +23,11 @@
 .formContact {
     width: 65%;
     padding: 50px;
-    box-shadow: 15px 15px 0 0 $greenishcyan;
-    background-color: $iceelue;
+    box-shadow: 20px 20px 0 0 $greenishcyan;
     position: relative;
     top: -125px;
     margin-right: 50px;
+    background-color: white;
 }
 
 .nameEmail {
@@ -40,24 +40,6 @@
         padding: 20px;
     }
 }
-
-.flexform {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    textarea {
-        border: none;
-        border: 2px solid $greenishcyan;
-        padding: 20px;
-        resize: none;
-        width: 100%;
-        height: 250px;
-        }
-    button {
-        margin-top: 50px;
-    }
-}
-
 
 .socialMediaIcons {
     display: flex;
@@ -77,10 +59,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .flexSocial {
     display: flex;
     justify-content: space-between;
+}
+
+.socialMediaIcons {
+    i {
+        color: $black;
+    }
 }

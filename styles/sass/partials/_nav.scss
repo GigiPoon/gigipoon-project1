@@ -3,7 +3,7 @@
     justify-content: flex-end;
     li {
         &:not(:first-child) {
-                padding: 8px 0 8px 50px;
+                margin: 8px 0 8px 50px;
             }
         &:first-child {
             margin-right: auto;

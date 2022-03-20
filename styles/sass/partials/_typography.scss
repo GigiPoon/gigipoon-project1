@@ -29,10 +29,17 @@ h3 {
     color: $spruce;
 }
 
-h4,h5 {
+h4 {
     font-size: 1.75rem;
     letter-spacing: 0.19rem;
     color: $spruce;
+}
+
+//the sub headings in blog section
+h5 {
+    font-size: 1.2rem;
+    color: $twilightelue;
+    letter-spacing: 0.1rem;
 }
 
 h6 {
@@ -41,7 +48,7 @@ h6 {
     color: $spruce;
 }
 
-h2,h3,h4,h5,h6 {
+h3,h4,h5,h6 {
     line-height: 2.9rem;
 }
 
