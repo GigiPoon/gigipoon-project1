@@ -227,6 +227,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-size: 1rem;
@@ -898,6 +902,10 @@ footer p {
   }
 }
 @media (max-width: 1024px) {
+  html {
+    font-size: 100%;
+  }
+
   .checked li:not(:first-child) {
     margin: 8px 0 8px 20px;
   }
@@ -1332,5 +1340,42 @@ footer p {
 
   .contactImg {
     height: 55vh;
+  }
+
+  .flexComment .personTwo {
+    width: 30%;
+  }
+  .flexComment .personTwo img {
+    width: 100%;
+  }
+  .flexComment .personOne {
+    width: 30%;
+  }
+  .flexComment .personOne img {
+    width: 100%;
+  }
+
+  .flexInfo li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoLeft {
+    margin: 0 auto;
+  }
+  .infoLeft i {
+    width: 40px;
+    height: 40px;
+    margin: 20px 0;
   }
 }
