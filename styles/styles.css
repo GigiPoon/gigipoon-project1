@@ -1029,6 +1029,7 @@ footer p {
     left: 0;
     z-index: 20;
     padding: 0;
+    top: -10px;
   }
 
   .toggle {
@@ -1051,8 +1052,8 @@ footer p {
 
   .logo {
     position: absolute;
-    margin: 22px;
-    top: 0;
+    margin: 17px 17px 24px 17px;
+    top: 10px;
     left: 0;
   }
   .logo::after {
