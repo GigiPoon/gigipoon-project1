@@ -350,6 +350,9 @@
 }
 
 @media (max-width: 480px) {
+    .title {
+        top: 55%;
+    }
     h1 {
         font-size: 4.6rem;
     }
