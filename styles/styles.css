@@ -595,7 +595,7 @@ button:focus {
 .flexColumnLeft .leftText {
   text-align: right;
   margin: 70px 0;
-  width: 35vw;
+  width: 70%;
   margin-left: auto;
 }
 .flexColumnLeft .leftText p {
@@ -628,7 +628,7 @@ button:focus {
 }
 .flexColumnRight .rightText {
   margin: 70px 0;
-  width: 35vw;
+  width: 70%;
 }
 .flexColumnRight .rightText p {
   margin: 15px 0;
@@ -781,7 +781,7 @@ footer p {
 }
 
 .blogLeft {
-  width: 55%;
+  width: 65%;
   padding-bottom: 150px;
 }
 
@@ -801,13 +801,13 @@ footer p {
 }
 
 .leftblogContainer {
-  width: 55%;
+  width: 65%;
   -webkit-box-shadow: 5px 5px 0 0 #50E3C2;
           box-shadow: 5px 5px 0 0 #50E3C2;
 }
 .leftblogContainer .pContainer {
   padding-bottom: 50px;
-  width: 55%;
+  width: 65%;
   margin: 0 auto;
 }
 .leftblogContainer .pContainer p:first-of-type {
@@ -898,7 +898,7 @@ footer p {
 
 @media (min-width: 2200px) {
   .flexBlog .leftblogContainer .pContainer {
-    margin: 0 10% 0 40%;
+    margin: 0 5% 0 30%;
   }
 }
 @media (max-width: 1024px) {
@@ -1267,6 +1267,10 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+
   .titleImg {
     display: none;
   }
